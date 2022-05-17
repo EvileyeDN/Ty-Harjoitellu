@@ -18,6 +18,7 @@ function load_assets(){ ?>
 <script type="text/javascript" src="ydin/assets/js/javascript.js"> </script>
 <script type="text/javascript" src="ydin/assets/js/bootstrap.bundle.js"> </script>
 <script type="text/javascript" src="ydin/assets/js/bootstrap.js"> </script>
+<script type="text/javascript" src="ydin/assets/js/bootstrap.min.js"> </script>
 <link type="text/css" href="ydin/assets/css/design.css" rel="stylesheet" media="all" />
 <link type="text/css" href="ydin/assets/css/bootstrap.css" rel="stylesheet" media="all" />
 <link type="text/css" href="ydin/assets/css/font-awesome.min.css" rel="stylesheet" media="all" />

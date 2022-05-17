@@ -127,7 +127,7 @@ Function RegaButton()
             </button><?php } }?>
 <!--<p>Модальное окно регистрации</p>-->
     <div class="modal fade" id="Registrointi" tabindex="-1" aria-labelledby="Registrointilable" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="Registrointilable">Rekisteröinti</h5>
@@ -136,7 +136,7 @@ Function RegaButton()
                 <div class="modal-body">
                     <form action="index.php?act=rega" method="post" >
                         <div class="row mb-2">
-                            <label for=inputlogin"" class="col-sm-2 col-form-label">Tunnus</label>
+                            <label for=inputlogin"" class="col-sm-2 col-form-label">Käyttäjätunnus</label>
                             <div class="col-sm-10">
                                 <input class="form-control" id="inputlogin" name="username" type="login">
                             </div>

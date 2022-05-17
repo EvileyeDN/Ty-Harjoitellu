@@ -18,6 +18,7 @@ if (isset ($_POST['submit'])) {
 	$search2 = $_POST['search2'];
 // delete from search bar Oy
 	$search = preg_replace('/\bOy\b/i', '', $search1);
+	$search = str_replace("'", "\'", $search);
 // search by company and area	
 	$sql = "SELECT * FROM work WHERE company LIKE '%$search%' AND Toimiala = '$search2'";
 	$result = $conn->query($sql);

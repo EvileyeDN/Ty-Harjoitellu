@@ -71,9 +71,10 @@ if(!empty($statusMsg)){ ?>
 				 <!--<p>File upload form</p>-->
 			<div class="modal-body">
             <div class="row mb-2" id="importFrm">
-			<form action="index.php?act=updatebd" method="post" enctype="multipart/form-data">
+			<form method="post" enctype="multipart/form-data" id="importprogress">
+			<span id="message"></span>
 			<div class="col">
-		  <input class="form-control col-sm-3 me-0" type="file" name="file" />
+		  <input class="form-control col-sm-3 me-0" type="file" name="file" id="file" />
 		  </div>
 		  <!--<p>Selecting a field separator</p>-->
 		  <div class="row">
@@ -89,12 +90,25 @@ if(!empty($statusMsg)){ ?>
 		  </div>
 		  
 		  <div class="col mt-3">
-            <input type="submit" class="btn btn-outline-primary btn-lg me-3" name="importSubmit" value="Tuonti">
-			<input type="submit" class="btn btn-outline-primary btn-lg me-3" name="importUpdateSubmit" value="päivittää">
+		  <input type="hidden" name="hidden_field" value="1" />
+            <input type="submit" class="btn btn-outline-primary btn-lg me-3" name="importSubmit" id="importSubmit" value="Tuonti">
+			<input type="submit" class="btn btn-outline-primary btn-lg me-3" name="importUpdateSubmit" id="importUpdateSubmit" value="päivittää">
 			</div>
         </form>
-					</div>
-                      
+		<div class="form-group" id="process" style="display:none;">
+				<div class="progress mt-3" style="height: 30px">
+				<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+				<div class="row">
+				<div class="col ms-2"><span id="process_data" class="text-right"></span></div> - <div class="col"><span id="total_data" class="tetxt-left"></span></div>
+				</div>
+				</div>
+				</div>
+				</div>
+            </div>
+			</div>
+			</div>
+		</div>
+	</div>
 
  <?php
 
